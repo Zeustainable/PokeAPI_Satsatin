@@ -1,0 +1,250 @@
+/* ========================================== Universal Reset ========================================== */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ========================================== BODY ========================================== */
+
+body {
+  background-image: url('https://i.ibb.co/W6Rcww9/EXTRA-Bootcamp-API-1.png');
+  background-size: cover;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* ========================================== HEADER ========================================== */
+
+.headerPage {
+  display: flex;
+  justify-content:space-between;
+  background-color: #d34935;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.headerImage {
+  padding: 20px 40px;
+}
+
+.headerButton {
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+a {
+  color: #d34935;
+  text-decoration: none;
+}
+
+.btnRedirect {
+  background-color: #ffffff;
+  color: #d34935;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  height: 45px;
+  width: 150px;
+  margin: 10px auto;
+  margin-right: 10px;
+}
+
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.btnRedirect:hover {
+  transform: scale(1.1);
+}
+
+/* ========================================== MAIN ========================================== */
+
+main {
+	flex: 1;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mainContent {
+  display:flex;
+  justify-content: space-around;
+}
+
+.leftImage {
+  margin-top: 60px;
+}
+
+.rightImage {
+  margin-top: 40px;
+}
+
+.centerSearchBar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#txtSearchBar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 45px;
+  width: 511px;
+  margin: 10px auto;
+}
+
+#btnClear {
+  background-color: #6d6d6d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 45px;
+  width: 80px;
+  margin: 10px auto;
+}
+
+#btnSearch {
+  background-color: #d34935;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 45px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+#btnClear:hover {
+  color: #ffffff;
+  background-color: #5e5e5e;
+}
+
+#btnSearch:hover {
+  color: #ffffff;
+  background-color: #b93c28;
+}
+
+#outputResult {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  margin-top: 11px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 800px;
+  height: 237px;
+}
+
+#outputResult img {
+  width: 200px;
+}
+
+ul {
+  margin-left: 50px;
+  justify-content: right;
+  list-style: none;
+}
+
+li {
+  background-color: #d34935;
+  color: #ffffff;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  padding-right: 30px;
+  border-radius: 3px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#outputName {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.680);
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 800px;
+  font-size: 30px;
+  height: 78px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================== FOOTER ========================================== */
+
+footer {
+	text-align: center;
+	font-size: small;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 25px;
+	background-color: #d34935;
+	color: white;
+}
+
+p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================== MEDIA ========================================== */
+
+@media (max-width: 980px) {
+	h1 {
+		padding: 3rem;
+		font-size: 80px;
+		text-align: center;
+	}
+
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		width: calc(100% - 10rem);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+
+	.card-text {
+		font-size: 30px;
+		line-height: 1.6;
+		text-align: justify;
+	}
+
+	ul {
+		margin-top: 2rem;
+		margin-left: 2rem;
+		font-size: 40px;
+	}
+
+	footer {
+		font-size: 20px;
+	}
+}
